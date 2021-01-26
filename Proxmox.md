@@ -67,3 +67,14 @@ server {
     }
 }
 ```
+
+```bash
+systemctl edit nginx.service
+```
+*Ajouter les informations suivantes dedans.*
+```yml
+[Unit]
+Requires=pve-cluster.service
+After=pve-cluster.service
+```
+*Enregistrez le fichier et quittez le fichier, redémarrez le service nginx.*

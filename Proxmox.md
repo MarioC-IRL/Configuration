@@ -76,6 +76,7 @@ server {
 ```bash
 ln -sf /etc/nginx/sites-available/proxmox.conf /etc/nginx/sites-enabled
 ```
+*Passons à la modification du service concernant nginx.*
 ```bash
 systemctl edit nginx.service
 ```
@@ -86,3 +87,6 @@ Requires=pve-cluster.service
 After=pve-cluster.service
 ```
 *Enregistrez le fichier et quittez le fichier, redémarrez le service nginx.*
+```bash
+/etc/init.d/nginx restart
+```

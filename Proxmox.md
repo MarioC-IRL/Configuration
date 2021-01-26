@@ -2,7 +2,7 @@
 ```bash
 nano /etc/nginx/sites-available/proxmox.conf
 ```
-*Ensuite, ajouter le contenu suivant.*
+*Ajouter le contenu suivant dans le fichier de conf.*
 ```yml
 server {
     # Écoute sur le port 80 en IPv4/IPv6

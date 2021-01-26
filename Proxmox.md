@@ -76,7 +76,7 @@ server {
 ```bash
 ln -sf /etc/nginx/sites-available/proxmox.conf /etc/nginx/sites-enabled
 ```
-*Passons à la modification du service concernant nginx.*
+*Passons maintenant à la modification du fichier service nginx.*
 ```bash
 systemctl edit nginx.service
 ```

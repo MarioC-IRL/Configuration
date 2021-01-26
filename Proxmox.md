@@ -1,3 +1,8 @@
+*Ouvréez un fichier ayant comme chemin /etc/nginx/sites-available/proxmox.conf.*
+```bash
+nano /etc/nginx/sites-available/proxmox.conf
+```
+*Ensuite, ajouter le contenu suivant.*
 ```yml
 server {
     # Écoute sur le port 80 en IPv4/IPv6
@@ -67,7 +72,10 @@ server {
     }
 }
 ```
-
+*Ensuite, vous devez lier le fichier au répertoire des sites.*
+```bash
+ln -sf /etc/nginx/sites-available/proxmox.conf /etc/nginx/sites-enabled
+```
 ```bash
 systemctl edit nginx.service
 ```

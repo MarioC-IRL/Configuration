@@ -1,3 +1,5 @@
+![alt text](https://i0.wp.com/gplexpert.com/wp-content/uploads/2019/07/PROXMOX.png "Proxmox PVE")
+
 *Ouvréez un fichier ayant comme chemin /etc/nginx/sites-available/proxmox.conf.*
 ```bash
 nano /etc/nginx/sites-available/proxmox.conf

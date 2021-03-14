@@ -12,7 +12,7 @@ server {
     listen [::]:80;
 
     # Définition de l'url utilisée pour accéder à l'hôte.
-    server_name github.com;
+    server_name exemple.com;
 
     # Réécriture de l'URL utilisée pour l'hôte en HTTPS
     return 301 https://$host$request_uri;
@@ -24,7 +24,7 @@ server {
     listen [::]:443 ssl http2;
 
     # Définition de l'url utilisée pour accéder à l'hôte.
-    server_name github.com;
+    server_name exemple.com;
     
     # Configuration du journal d'accès et d'erreurs.
     access_log /var/log/nginx/proxmox.access.log;
